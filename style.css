@@ -1,0 +1,224 @@
+:root{
+    /* Color */
+    --heroFooterBackG_quoteText: #1F2937;
+    --heroMainText_heroLogoText: #F9FaF8;
+    --heroSecondaryText_headerLinkText_quoteSectionBackG: #e5e7eb;
+    --btnColor_callToActionBackG: #3882f6;
+    --infoHeaderText: #1f2937;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Roboto, "sans serif";
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--infoHeaderText);
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 10rem;
+}
+
+header > nav > ul{
+    list-style: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+header > nav  a{
+    color: var(--heroSecondaryText_headerLinkText_quoteSectionBackG);
+    font-size: 18px;
+}
+
+header > nav > .logo{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* main */
+
+main{}
+
+main > .first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5rem 10rem;
+    gap: 4em;
+    background-color: var(--infoHeaderText);
+}
+
+main > .first-section div{
+    flex: 1 1 0;
+}
+
+main > .first-section > .right img{
+    height: auto;
+    max-width: 600px;
+    min-width: 400px;
+    object-fit: cover;
+}
+
+main > .first-section > .left h1{
+    font-size: 48px;
+    color: var(--heroMainText_heroLogoText);
+}
+
+main > .first-section > .left p{
+    color: var(--heroSecondaryText_headerLinkText_quoteSectionBackG);
+}
+
+main > .first-section > .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .9em;
+}
+
+main > .first-section > .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .first-section > .left button{
+    background-color: var(--btnColor_callToActionBackG);
+    color: white;
+    padding: .4em 1em;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: none;
+
+    margin-right: auto;
+}
+
+main > .second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 10rem;
+    gap: 2em;
+}
+
+main > .second-section > .boxes-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+main > .second-section > .boxes-div > *{
+    flex: 1 1 0;
+}
+
+main > .second-section > .boxes-div > .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: solid 3px var(--btnColor_callToActionBackG);
+    border-radius: 10px;
+}
+
+main > .second-section > .boxes-div > .box p{
+    color: var(--infoHeaderText);
+}
+
+main > .second-section > .boxes-div > .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    gap: 1em;
+}
+
+main > .third-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    
+    background-color: var(--heroSecondaryText_headerLinkText_quoteSectionBackG);
+    padding: 6em 20em;
+}
+
+main > .third-section > p:first-child{
+    font-style: italic;
+    font-size: 30px;
+    color: var(--heroFooterBackG_quoteText);
+}
+
+main > .third-section > p:last-child{
+    font-weight: bold;
+    margin-left: auto;
+}
+
+main > .fourth-section{
+    padding: 5em 16em;
+}
+
+main > .fourth-section > .container{
+    background-color: var(--btnColor_callToActionBackG);
+    padding: 3em 5em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+
+main > .fourth-section > .container > .left{
+    flex: 4 1 0;
+}
+
+main > .fourth-section > .container > .left p{
+    color: var(--heroMainText_heroLogoText);
+}
+
+main > .fourth-section > .container > .left p:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main > .fourth-section > .container > .right{
+    flex: 1 1 0;
+}
+
+main > .fourth-section > .container > .right button{
+    border: solid 3px white;
+    background-color: transparent;
+    color: var(--heroMainText_heroLogoText);
+    padding: .4em 1.5em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+footer{
+    padding: 2em 0;
+    background-color: var(--heroFooterBackG_quoteText);
+}
+
+footer > p{
+    color: var(--heroMainText_heroLogoText);
+    text-align: center;
+}
